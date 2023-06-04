@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="Fashionc.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1q.0">
+    <title>Document</title>
+    <script src="Fashion.js" defer></script>
+</head>
+<body>
+    
+    <nav>
+        <figure>
+            <img src="klogo.png">
+        </figure>
+
+        <ul>
+        
+         <li><a href="#"> Home</a></li>
+         <li><a href="#"> News</a></li>
+         <li><a href="#"> Gallery</a></li> 
+         <li><a href="#"> Contact</a></li>
+         <title>Traditional Fashion Store</title>
+        </ul>
+     
+     </nav>
+     <div class="search-wrapper">
+        <label for="search">Search Users</label>
+        <input type="search" id="search">
+     </div>
+
+
+    <div class="full-img" id="fullImgBox">
+        <img src="Gallery/image1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+
+    </div>
+</nav>
+<div class="container">
+    <div class="gallery">
+        <img src="ZuluTraditionalDress.jpg" onclick="openFullImg(this.src)">
+            <div class="desc"> This is a Isizulu Traditional Dress</div>
+            <div class="mny"> Price is R2300</div>
+    </div>
+    <div class="gallery">
+        <img src="XhosaTraditionalDress.jpg" onclick="openFullImg(this.src)">
+            <div class="desc"> This is a Xhosa Traditional Dress</div>
+            <div class="mny"> Price is R1800</div>
+    </div>
+    <div class="gallery">
+        <img src="SothoTraditionalDress.jpg" onclick="openFullImg(this.src)">
+            <div class="desc"> This is Sotho Traditional Dress Called Shweshwe</div>
+            <div class="mny"> Price is R2100</div>
+    </div>
+    <div class="gallery">
+        <img src="shweshwesuit.jpg" onclick="openFullImg(this.src)">
+            <div class="desc"> This is a Traditional suite called shweshwe it is a sotho traditional clothing</div>
+            <div class="mny"> Price = R1500</div>
+    </div>
+    <div class="gallery">
+        <img src="UmbhacoXhosa.jpg" onclick="openFullImg(this.src)">
+            <div class="desc"> This is a Xhosa Man Clothing Called Umbhaco</div>
+            <div class="mny"> Price is R1700</div>
+    </div>
+    <div class="gallery">
+        <img src="UmblaseloZulu.jpg" onclick="openFullImg(this.src)">
+            <div class="desc"> This Traditional Man Clothing Called Umblaselo</div>
+            <div class="mny"> Price is R1200</div>
+    </div>
+
+<script>
+
+        var fullImgBox = document.getElementById("fullImgBox")
+        var fullImg = document.getElementById("fullImg")
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+</script>
+
+<footer>
+All Right Resevered Traditional Fashion Store
+</footer>
+
+
+</body>
+</html>
